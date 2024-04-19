@@ -1,2 +1,5 @@
 # calculator
-Calculator app coded from scratch 
+
+React Calculator app & logic coded from scratch.
+
+Run `npm run dev` to start.

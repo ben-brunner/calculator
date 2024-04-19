@@ -1,0 +1,28 @@
+.calculator-grid {
+  background: linear-gradient(to right, #00aaff, #00ff6c);
+  @apply grid mt-8 grid-cols-4 max-w-lg mx-auto justify-center;
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+  > button {
+    @apply cursor-pointer text-black text-2xl border border-white outline-none transition-all;
+    background-color: rgba(255, 255, 255, 0.75);
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+  }
+}
+
+.output {
+  @apply flex flex-col items-end justify-around px-2 break-all;
+  word-wrap: break-word;
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
+  .previous-operand {
+    @apply text-base;
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .current-operand {
+    @apply text-4xl;
+    color: white;
+  }
+}
